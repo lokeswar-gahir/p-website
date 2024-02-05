@@ -15,7 +15,7 @@
 					<h1 id="logo">Portfolio website<span>.</span></h1>
 					<nav id="nav">
 						<ul>
-							<li class="current"><a href="index.html" id="greet">Welcome</a></li>
+							<li class=""><a href="#" id="greet" title="Hope you are doing well">Welcome</a></li>
 							<li class="submenu">
 								<a href="#">Navigation</a>
 								<ul>
@@ -35,20 +35,13 @@
 									</li> -->
 								</ul>
 							</li>
-							<li><a href="#" class="button primary">Sign Up</a></li>
+							<!-- <li><a href="#" class="button primary">Sign Up</a></li> -->
 						</ul>
 					</nav>
 				</header>
 
 			<!-- Banner -->
 				<section id="banner">
-
-					<!--
-						".inner" is set up as an inline-block so it automatically expands
-						in both directions to fit whatever's inside it. This means it won't
-						automatically wrap lines, so be sure to use line breaks where
-						appropriate (<br />).
-					-->
 					<div class="inner">
 
 						<header>
@@ -57,7 +50,7 @@
 							<p>
 								Computer Science <strong>graduate</strong><br/>
 								with<br/>
-								masters in <strong>MCA</strong>
+								master in <strong>MCA</strong>
 							</p>
 						<footer>
 							<ul class="buttons stacked">
@@ -131,7 +124,7 @@
 									<section>
 										<span class="icon solid featured fa-check"></span>
 										<header>
-											<h3>Masters</h3>
+											<h3>Master</h3>
 										</header>
 										<p><center><a href="https://ravenshawuniversity.ac.in/">Ravenshaw University</a>, Cuttack</center></p>
 									</section>
@@ -140,17 +133,6 @@
 								<center>
 								My coursework included advanced subjects such as data structures, artificial intelligence, and database management systems, providing me with a strong technical foundation. I am proficient in programming languages such as Python and have hands-on experience with data manipulation libraries like Pandas and visualization tools like Matplotlib.
 								</center>
-								<!-- <div class="col-4 col-12-narrower">
-
-									<section>
-										<span class="icon solid featured fa-check"></span>
-										<header>
-											<h3>Probably Something</h3>
-										</header>
-										<p>Sed tristique purus vitae volutpat ultrices. Aliquam eu elit eget arcu commodo suscipit dolor nec nibh. Proin a ullamcorper elit, et sagittis turpis. Integer ut fermentum.</p>
-									</section>
-
-								</div> -->
 							</div>
 						</section>
 
@@ -165,7 +147,6 @@
 								<div class="col-6 col-12-narrower">
 
 									<section>
-										<!-- https://cba-varh.onrender.com/ -->
 										<a href="https://laptop-price-prediction-5kyxd4c8ldeuedsmr2fr88.streamlit.app/" class="image featured"><img src="images/pic01.jpg" alt="" /></a>
 
 										<header>
@@ -221,19 +202,18 @@
 							</footer>
 
 						</section>
-
 				</article>
 
 			<!-- CTA -->
 				<section id="cta">
 
 					<header>
-						<h2>Ready to do <strong>something</strong>?</h2>
-						<p>Proin a ullamcorper elit, et sagittis turpis integer ut fermentum.</p>
+						<h2>Always <strong>Ready</strong> to <strong>Serve</strong></h2>
+						<p>Thanks for the visit.</p>
 					</header>
 					<footer>
 						<ul class="buttons">
-							<li><a href="#" class="button primary" onclick="notAvail()">Resume</a></li>
+							<li><a href="resume.html" class="button primary">Resume</a></li>
 							<li><a href="#banner" class="scrolly button">Go to TOP</a></li>
 						</ul>
 					</footer>
@@ -255,7 +235,7 @@
 						<li>&copy; All Copyrights Reserved 2001:2024</li>
 						<li>lokeswargahir349@gmail.com</li>
 						<li>+91-8658481649</li>
-						<li>Design: <a href="https://www.instagram.com/lokeswar.gahir/?hl=en">Lord</a></li>
+						<li>Design: <a href="https://www.linkedin.com/in/lokeswar-gahir-7592a6200/">Lord</a></li>
 					</ul>
 				</footer>
 
@@ -275,19 +255,18 @@
 				const date = new Date();
 				const time = date.toLocaleTimeString([], { hour: '2-digit', minute: '2-digit', hour12: false });
 				const time_int = parseInt(time.slice(0,2));
-				// console.log(typeof(time_int));
 				const greet = document.getElementById("greet");
 				if (time_int>0 && time_int<12){
-					greet.innerText="Good Morning.";
+					greet.innerText="Good Morning";
 				}
 				else if (time_int>=12 && time_int<17){
-					greet.innerText="Good Afternoon.";
+					greet.innerText="Good Afternoon";
 				}
 				else if (time_int>=17 && time_int<=22){
-					greet.innerText="Good Evening.";
+					greet.innerText="Good Evening";
 				}
 				else{
-					greet.innerText="Hello.";
+					greet.innerText="Welcome";
 				}
 				function notAvail(){
 					alert("Resume will be uploaded soon.");
