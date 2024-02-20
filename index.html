@@ -6,6 +6,33 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+
+		<style>
+			#projects .row div img , #main-one {
+				transition-duration: 0.3s;
+				transition-property: all;
+				transition-timing-function: ease-out;
+				box-shadow: rgba(0, 0, 0, 0.5) 2px 5px 7px;
+			}
+			#main-one:hover{
+				box-shadow: rgba(0, 0, 0, 0.5) 5px 13px 30px;
+			}
+			#projects .row div section p{
+				transition-duration: 0.5s;
+				transition-property: all;
+				transition-timing-function: ease-out;
+			}
+
+			.collapse-on-hover{
+				height:0;
+				overflow:hidden;
+				
+			}
+			.expand-on-hover{
+				height:250px;
+				overflow:auto;
+			}
+		</style>
 	</head>
 	<body class="index is-preload">
 		<div id="page-wrapper">
@@ -74,7 +101,7 @@
 					</header>
 
 					<!-- One -->
-						<section class="wrapper style2 container special-alt">
+						<section class="wrapper style2 container special-alt" id="main-one">
 							<div class="row gtr-50">
 								<div class="col-8 col-12-narrower">
 
@@ -124,7 +151,7 @@
 									<section>
 										<span class="icon solid featured fa-check"></span>
 										<header>
-											<h3>Master</h3>
+											<h3><strong>Master</strong></h3>
 										</header>
 										<p><center><a href="https://ravenshawuniversity.ac.in/">Ravenshaw University</a>, Cuttack</center></p>
 									</section>
@@ -147,12 +174,12 @@
 								<div class="col-6 col-12-narrower">
 
 									<section>
-										<a href="https://laptop-price-prediction-5kyxd4c8ldeuedsmr2fr88.streamlit.app/" class="image featured"><img src="images/pic01.jpg" alt="" /></a>
+										<a href="https://laptop-price-prediction-5kyxd4c8ldeuedsmr2fr88.streamlit.app/" target="_blank" class="image featured"><img src="images/laptop white.jpg" alt="Laptop Price Prediction" /></a>
 
 										<header>
-											<h3><a href="https://laptop-price-prediction-5kyxd4c8ldeuedsmr2fr88.streamlit.app/">Laptop Price Prediction</a></h3>
+											<h3><a href="https://laptop-price-prediction-5kyxd4c8ldeuedsmr2fr88.streamlit.app/" target="_blank"><strong>Laptop Price Prediction</strong></a></h3>
 										</header>
-										<p>
+										<p class="collapse-on-hover">
 											The Laptop Price Prediction System is an machine learning project designed to predict the prices of laptops based on various features and specifications. This project aims to assist users in estimating the approximate pricing for laptops.
 										</p>
 									</section>
@@ -161,11 +188,13 @@
 								<div class="col-6 col-12-narrower">
 
 									<section>
-										<a href="https://car-gzo4q3zcubbtszsps4u2gz.streamlit.app/" class="image featured"><img src="images/pic02.jpg" alt="" /></a>
+										<a href="https://car-gzo4q3zcubbtszsps4u2gz.streamlit.app/" target="_blank" class="image featured"><img src="images/car white.jpg" alt="Used car price Prediction" /></a>
 										<header>
-											<h3><a href="https://car-gzo4q3zcubbtszsps4u2gz.streamlit.app/">Used car price Prediction</a></h3>
+											<h3><a href="https://car-gzo4q3zcubbtszsps4u2gz.streamlit.app/" target="_blank"><strong>Used car price Prediction</strong></a></h3>
 										</header>
-										<p>Sed tristique purus vitae volutpat commodo suscipit amet sed nibh. Proin a ullamcorper sed blandit. Sed tristique purus vitae volutpat commodo suscipit ullamcorper sed blandit lorem ipsum dolore.</p>
+										<p class="collapse-on-hover">
+											This project helps sellers make informed decisions by providing insights into a car's expected value in the market. Used car prediction involves utilizing data analysis techniques to forecast the value of a pre-owned vehicle. By examining factors such as the car's manufacturer, model, year, mileage, and condition, predictive model estimate its worth. These models employ machine learning algorithms trained on historical sales data to recognize patterns and make accurate predictions. 
+										</p>
 									</section>
 
 								</div>
@@ -174,32 +203,36 @@
 								<div class="col-6 col-12-narrower">
 
 									<section>
-										<a href="https://qrcode-generateor.streamlit.app/" class="image featured"><img src="images/pic03.jpg" alt="" /></a>
+										<a href="https://qrcode-generateor.streamlit.app/" target="_blank" class="image featured"><img src="images/qr white.jpg" alt="QR Code Generator" /></a>
 										<header>
-											<h3><a href="https://qrcode-generateor.streamlit.app/">QR Code Generator</a></h3>
+											<h3><a href="https://qrcode-generateor.streamlit.app/" target="_blank"><strong>QR Code Generator</strong></a></h3>
 										</header>
-										<p>Sed tristique purus vitae volutpat commodo suscipit amet sed nibh. Proin a ullamcorper sed blandit. Sed tristique purus vitae volutpat commodo suscipit ullamcorper sed blandit lorem ipsum dolore.</p>
+										<p class="collapse-on-hover">
+											This QR code generator is a tool that creates Quick Response (QR) codes, which are two-dimensional barcodes that can store various types of information, such as website URLs, contact information, or plain text. To use a QR code generator, you typically input the desired information or content and choose any customization options, such as size, color, or design. The generator then processes this information and creates a unique QR code image that can be downloaded or directly embedded into documents, websites, or other digital platforms. Users can then scan the QR code with a smartphone or QR code scanner to access the stored information quickly and conveniently.
+										</p>
 									</section>
 
 								</div>
 								<div class="col-6 col-12-narrower">
 
 									<section>
-										<a href="https://clipping.streamlit.app/" class="image featured"><img src="images/pic04.jpg" alt="" /></a>
+										<a href="https://clipping.streamlit.app/" target="_blank" class="image featured"><img src="images/clipping white.jpg" alt="Clipping" /></a>
 										<header>
-											<h3><a href="https://clipping.streamlit.app/">Clipping</a></h3>
+											<h3><a href="https://clipping.streamlit.app/" target="_blank"><strong>Clipping</strong></a></h3>
 										</header>
-										<p>Sed tristique purus vitae volutpat commodo suscipit amet sed nibh. Proin a ullamcorper sed blandit. Sed tristique purus vitae volutpat commodo suscipit ullamcorper sed blandit lorem ipsum dolore.</p>
+										<p class="collapse-on-hover">
+											The clipping process typically involves comparing each geometric primitive (such as lines, polygons, or curves) against a clipping region or window defined by the viewport or other boundaries. Geometric primitives that fall entirely within this region are retained, while those that extend beyond it are clipped or truncated to fit within the boundaries.
+										</p>
 									</section>
 
 								</div>
 							</div>
 
-							<footer class="major">
+							<!-- <footer class="major">
 								<ul class="buttons">
 									<li><a href="#" class="button">See More</a></li>
 								</ul>
-							</footer>
+							</footer> -->
 
 						</section>
 				</article>
@@ -268,9 +301,16 @@
 				else{
 					greet.innerText="Welcome";
 				}
-				function notAvail(){
-					alert("Resume will be uploaded soon.");
-				}
+				document.querySelectorAll("#projects .row div section").forEach((item)=>{
+					item.addEventListener("mouseover",()=>{
+						item.getElementsByTagName("img")[0].style="box-shadow: rgba(0, 0, 0, 0.7) 5px 13px 30px;";
+						item.getElementsByTagName("p")[0].className="expand-on-hover";
+					});
+					item.addEventListener("mouseout",()=>{
+						item.getElementsByTagName("img")[0].style='';
+						item.getElementsByTagName("p")[0].className="collapse-on-hover";
+					});
+				});
 			</script>
 	</body>
 </html>
