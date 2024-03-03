@@ -3383,3 +3383,45 @@ input, select, textarea {
 			}
 
 	}
+::-webkit-scrollbar{
+	width:15px;
+}
+
+::-webkit-scrollbar-track{
+	background: #eee;
+	/* background: #1C1F2B; */
+}
+
+::-webkit-scrollbar-thumb{
+	background: linear-gradient(0deg, rgba(38,49,122,1) 27%, rgba(12,144,154,1) 92%);
+	background-clip: padding-box;
+  	border: 0.1em solid #eee;
+	border-radius: 10px;
+}
+
+::-webkit-scrollbar-button:single-button {
+	background-color: #eee;
+	display: block;
+	border-style: solid;
+	height: 10px;
+	width: 7px;
+  }
+
+/* Up */
+::-webkit-scrollbar-button:single-button:vertical:decrement {
+	border-width: 0 8px 8px 8px;
+	border-color: transparent transparent #777 transparent;
+  }
+  
+  ::-webkit-scrollbar-button:single-button:vertical:decrement:hover {
+	border-color: transparent transparent #333 transparent;
+  }
+  /* Down */
+  ::-webkit-scrollbar-button:single-button:vertical:increment {
+	border-width: 8px 8px 0 8px;
+	border-color: #777 transparent transparent transparent;
+  }
+  
+  ::-webkit-scrollbar-button:vertical:single-button:increment:hover {
+	border-color: #333 transparent transparent transparent;
+  }
